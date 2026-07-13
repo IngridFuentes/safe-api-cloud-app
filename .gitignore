@@ -2,3 +2,5 @@ dist/
 node_modules/
 .env
 serviceAccountKey.json
+frontend/src/firebase-config.ts
+frontend/src/dist/firebase-config.js
