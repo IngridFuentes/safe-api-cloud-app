@@ -1,0 +1,11 @@
+{
+  "name": "safeapi",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npx serve frontend/src"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
