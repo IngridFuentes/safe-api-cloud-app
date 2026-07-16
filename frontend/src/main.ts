@@ -17,10 +17,13 @@ form.addEventListener('submit', async function (event) {
     });
 
     const data = await response.json();
+    // console.log('Response from server:', data);
 
     if (response.ok) {
+      localStorage.setItem('uid', data.localId); //using local storage to store the uid and idToken for later use and bc backend is handling auth.
+      localStorage.setItem('idToken', data.idToken);
       console.log('User signed in successfully');
-      window.location.href = '/dashboard.html';
+      window.location.href = '/onboarding.html';
     } else {
       errorDisplay.textContent = 'Invalid email or password.';
       console.error(data);

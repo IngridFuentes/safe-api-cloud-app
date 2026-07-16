@@ -8,5 +8,10 @@
     "strict": true,
     "moduleResolution": "bundler"
   },
-  "include": ["frontend/src/main.ts", "frontend/src/dom.ts", "frontend/src/firebase-config.ts"]
+  "include": [
+    "frontend/src/main.ts",
+    "frontend/src/dom.ts",
+    "frontend/src/firebase-config.ts",
+    "frontend/src/onboarding.ts"
+  ]
 }

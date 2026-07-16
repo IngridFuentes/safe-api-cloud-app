@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raíces — Get started</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="quiz-wrap">
+
+      <div class="lang-toggle">
+        <button id="langEn" class="lang-btn active">English</button>
+        <button id="langEs" class="lang-btn">Español</button>
+      </div>
+
+      <div class="quiz-header">
+        <h1 class="logo">Ra<span>í</span>ces</h1>
+        <p id="subtitle" class="subtitle">Your personal finance coach — built for your journey</p>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="step active" id="step-1">
+        <h2 id="q1">What's your main money goal right now?</h2>
+        <p id="q1-sub" class="question-sub">Choose the one that feels most urgent.</p>
+        <div class="options" id="options-goal">
+          <div class="option" data-value="save">
+            <span id="g1">Start saving money</span>
+            <small id="g1s">Build an emergency fund or rainy day savings</small>
+          </div>
+          <div class="option" data-value="credit">
+            <span id="g2">Build or fix my credit</span>
+            <small id="g2s">I want to understand and improve my credit score</small>
+          </div>
+          <div class="option" data-value="debt">
+            <span id="g3">Get out of debt</span>
+            <small id="g3s">Manage credit cards, loans, or bills</small>
+          </div>
+          <div class="option" data-value="basics">
+            <span id="g4">Learn the basics</span>
+            <small id="g4s">I'm starting from zero — teach me everything</small>
+          </div>
+        </div>
+        <div class="nav">
+          <span id="sl1" class="step-label">Step 1 of 4</span>
+          <button class="btn primary" id="next1" disabled>Continue</button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step" id="step-2">
+        <h2 id="q2">How comfortable are you with money topics?</h2>
+        <p id="q2-sub" class="question-sub">No wrong answer — this helps us explain things the right way.</p>
+        <div class="options" id="options-level">
+          <div class="option" data-value="zero">
+            <span id="l1">Totally new to this</span>
+            <small id="l1s">Money stuff confuses me — start from scratch</small>
+          </div>
+          <div class="option" data-value="some">
+            <span id="l2">I know a little</span>
+            <small id="l2s">I've heard the terms but get lost in the details</small>
+          </div>
+          <div class="option" data-value="okay">
+            <span id="l3">Getting there</span>
+            <small id="l3s">I budget sometimes and want to do more</small>
+          </div>
+        </div>
+        <div class="nav">
+          <button class="btn" id="back2">Back</button>
+          <button class="btn primary" id="next2" disabled>Continue</button>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step" id="step-3">
+        <h2 id="q3">Do you send money to family abroad?</h2>
+        <p id="q3-sub" class="question-sub">We'll help you manage remittances as part of your budget.</p>
+        <div class="options" id="options-remit">
+          <div class="option" data-value="yes">
+            <span id="r1">Yes, regularly</span>
+            <small id="r1s">It's part of my monthly expenses</small>
+          </div>
+          <div class="option" data-value="sometimes">
+            <span id="r2">Sometimes</span>
+            <small id="r2s">When family needs help</small>
+          </div>
+          <div class="option" data-value="no">
+            <span id="r3">No, not currently</span>
+            <small id="r3s"></small>
+          </div>
+        </div>
+        <div class="nav">
+          <button class="btn" id="back3">Back</button>
+          <button class="btn primary" id="next3" disabled>Continue</button>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step" id="step-4">
+        <h2 id="q4">What's your name?</h2>
+        <p id="q4-sub" class="question-sub">Your coach will use this to make things feel personal.</p>
+        <input type="text" id="nameInput" class="input-field" placeholder="Your first name" />
+        <div class="nav">
+          <button class="btn" id="back4">Back</button>
+          <button class="btn primary" id="next4" disabled>Meet your coach</button>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="./dist/onboarding.js"></script>
+  </body>
+</html>
