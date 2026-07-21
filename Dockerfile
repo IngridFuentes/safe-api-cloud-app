@@ -10,10 +10,8 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:alpine
-
-COPY --from=0 /app/frontend/src/dist /usr/share/nginx/html
+ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "start"]

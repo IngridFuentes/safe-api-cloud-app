@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "dev": "npx serve frontend/src"
+    "dev": "npx serve frontend/src",
+    "start": "npx serve frontend/src -l 8080"
   },
   "devDependencies": {
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "firebase": "latest"
+    "firebase": "latest",
+    "serve": "latest"
   }
 }
