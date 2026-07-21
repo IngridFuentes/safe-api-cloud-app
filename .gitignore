@@ -4,3 +4,6 @@ node_modules/
 serviceAccountKey.json
 frontend/src/firebase-config.ts
 frontend/src/dist/firebase-config.js
+key.pem
+cert.pem
+*.pem
